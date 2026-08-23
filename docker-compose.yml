@@ -1,13 +1,13 @@
 services:
   db:
     image: postgres:16
-    container_name: iron-calc-db
+    container_name: ${CONTAINER_NAME}
     environment:
-      POSTGRES_DB: iron_calc
-      POSTGRES_USER: iron_calc
-      POSTGRES_PASSWORD: iron_calc
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
     ports:
-      - "5432:5432"
+      - "${PORT}"
     volumes:
       - iron_calc_data:/var/lib/postgresql/data
 
