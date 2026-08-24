@@ -144,7 +144,7 @@ CREATE TABLE budget_item
     ferragem_qtd_pontos_amarracao_estribo       INTEGER,
     ferragem_qtd_arame_por_ponto_amarracao      REAL,
     ferragem_qtd_estribos                       INTEGER,
-    ferragem_comprimento_total_estribos         INTEGER,
+    ferragem_comprimento_total_estribos         REAL,
     ferragem_qtd_total_pontos_amarracao_estribo INTEGER,
     quantity                                    REAL,
     ferragem_qtd_total_arame                    REAL,
